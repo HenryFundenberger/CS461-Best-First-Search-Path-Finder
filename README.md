@@ -8,6 +8,7 @@ This is my submission for program 1, my implementation of best first search.
 - There has been a change to coordinates.txt 
 	- South Haven has been updated to have the coordinates (37.0497874 -97.4052061) instead of it's original (7.0497874 -97.4052061). 
 	- Reguardless I beleve south haven is south enough that it shouldn't make a differnce if either coordinate is being used.
+	- If you would like to use the original coordinates.txt file that is also fine, testing has just been done with this text file in the repo. 
 - When inputting data into the python program.
 	- When the program prompts the user for the start and goal cities, captalization and the number of spaces before and after the city should not have an impact as long as the city is in adjacencies.txt
 	- Safest practice however should still be to spell cities as accuratly as possible.
