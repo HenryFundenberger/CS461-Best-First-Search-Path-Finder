@@ -3,7 +3,7 @@ This is my submission for program 1, my implementation of best first search.
 
 
 # General Information
-- The program to run is Program1.py.
+- To run the program, either using a tool such as VS Code or using your terminal use python to start Program1.py. 
 	- Adjacencies.txt and coordinates.txt have to be in the same directory as the file for it to run correctly.
 - There has been a change to coordinates.txt 
 	- South Haven has been updated to have the coordinates (37.0497874 -97.4052061) instead of it's original (7.0497874 -97.4052061). 
