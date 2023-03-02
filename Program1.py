@@ -42,7 +42,7 @@ coordinatesDict = {}
 for line in coordinates:
     line = line.split()
     line[0] = line[0].lower()
-    coordinatesDict[line[0]] = [line[1], line[2]]
+    coordinatesDict[line[0]] = [line[2], line[1]]
 
 
 
@@ -56,7 +56,7 @@ for city in adjacenciesDict:
                 coordinatesDict[city] = coordinatesDict[neighbor]
                 break
 
-
+print(coordinatesDict)
 # Class for a node in the graph
 # Each node has a name, coordinates, start coordinates, parent, visited, and f value (where the f value is the distance from the node to the start node)
 class Node:
