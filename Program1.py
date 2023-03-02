@@ -57,7 +57,7 @@ for city in adjacenciesDict:
                 coordinatesDict[city] = coordinatesDict[neighbor]
                 break
 
-print(coordinatesDict)
+
 # Class for a node in the graph
 # Each node has a name, coordinates, start coordinates, parent, visited, and f value (where the f value is the distance from the node to the start node)
 class Node:
@@ -66,7 +66,6 @@ class Node:
         self.coordinates = coordinates
         self.startCoordinates = startCoordinates
         self.parent = None
-        self.visited = False
         self.f = 0
 
     # Overriding the equals operator
@@ -210,7 +209,7 @@ def bestFirstSearch():
             if node in OPEN:
                 OPEN.remove(node)
 
-    return False
+    return False, False
 
 # Main function to run the program
 def main():
@@ -233,7 +232,7 @@ def main():
             # Reverse the path list so it's in the correct order
             path.reverse()
             print("Path: ", end="")
-            # For all but the last city in the path, print the city name and a comma
+            # For all but the last city in the path, print the city name and an arrow
             for city in path[:-1]:
                 print(city.title() + " -> ", end=" ")
             # For the last city in the path, print the city name and a period
