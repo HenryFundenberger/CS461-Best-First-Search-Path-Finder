@@ -1,6 +1,7 @@
 # CS461-Best-First-Search-Path-Finder
 This is my submission for program 1, my implementation of best first search. 
-
+If there are any questions or problems that arise please reach out to me: hgfnff@umsystem.edu
+Last tested 3/2/2023 and has been working. 
 
 # General Information
 - To run the program, either using a tool such as VS Code or using your terminal use python to start Program1.py. 
