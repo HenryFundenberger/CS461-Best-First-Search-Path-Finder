@@ -20,3 +20,13 @@ This is my submission for program 1, my implementation of best first search.
 
 # Sample Run
 ![Program1](https://user-images.githubusercontent.com/63514033/221990611-ae756a27-65cc-4871-8288-1734877791e7.gif)
+
+# Optional Information
+- Another interesting choice of heuristic would be to choose nodes that are closest to the goal node as apposed to choosing the nodes that are closest to the starting node.
+	- This can be acheived by updating the following lines
+		- Line 117 change Node(startCity, coordinatesDict[startCity], coordinatesDict[startCity]) -> Node(startCity, coordinatesDict[startCity], coordinatesDict[goalCity])
+		- Line 118 change Node(goalCity, coordinatesDict[goalCity], coordinatesDict[startCity]) -> Node(goalCity, coordinatesDict[goalCity], coordinatesDict[goalCity])
+		- Line 138 change startNode = Node(startCity, coordinatesDict[startCity], coordinatesDict[startCity]) -> startNode = Node(startCity, coordinatesDict[startCity], coordinatesDict[goalCity])
+		- Line 141 change goalNode = Node(goalCity, coordinatesDict[goalCity], coordinatesDict[startCity]) -> goalNode = Node(goalCity, coordinatesDict[goalCity], coordinatesDict[goalCity])
+		- Line 143 change goalNode = Node(goalCity, [0,0], coordinatesDict[startCity]) -> goalNode = Node(goalCity, [0,0], coordinatesDict[goalCity])
+		- Line 195 change neighborNode = Node(neighbor, coordinatesDict[neighbor], coordinatesDict[startCity]) -> neighborNode = Node(neighbor, coordinatesDict[neighbor], coordinatesDict[goalCity])
