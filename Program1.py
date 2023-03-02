@@ -42,6 +42,7 @@ coordinatesDict = {}
 for line in coordinates:
     line = line.split()
     line[0] = line[0].lower()
+    # set the city name as the key and the coordinates as the value (we do line[2] first because the coordinates are in the format (x, y)
     coordinatesDict[line[0]] = [line[2], line[1]]
 
 
